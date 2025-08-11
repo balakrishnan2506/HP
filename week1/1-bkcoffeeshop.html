@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <meta
+      name="description"
+      content="You can find here the best coffee in the world"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Coffee Shop</h1>
+      <nav role="navigation" aria-label="Main">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#menu">Menu</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <h2>Our Coffee</h2>
+      <article>
+        <h3>Espresso</h3>
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+          alt="Espresso Coffee"
+        />
+        <p>
+          Espresso is a coffee drink prepared by forcing hot water through
+          finely ground coffee beans.
+        </p>
+      </article>
+      <article>
+        <h3>Latte</h3>
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+          alt="Latte Coffee"
+        />
+        <p>
+          Latte is a coffee drink prepared by forcing hot water through finely
+          ground coffee beans.
+        </p>
+      </article>
+      <article>
+        <h3>Cappuccino</h3>
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+          alt="Cappuccino Coffee"
+        />
+        <p>
+          Cappuccino is a coffee drink prepared by forcing hot water through
+          finely ground coffee beans.
+        </p>
+      </article>
+      <article>
+        <h3>Americano</h3>
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+          alt="Americano Coffee"
+        />
+        <p>
+          Americano is a coffee drink prepared by forcing hot water through
+          finely ground coffee beans.
+        </p>
+      </article>
+      <article>
+        <h3>Tea</h3>
+        <img
+          src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80"
+          alt="Tea"
+        />
+        <p>Tea is a drink prepared by boiling tea leaves in water.</p>
+      </article>
+    </section>
+    <aside id="about">
+      <h2>Our Coffee</h2>
+      <p>
+        <em>We have a variety of coffee and tea.</em> We have a variety of
+        coffee and tea. We have a variety of coffee and tea. We have a variety
+        of coffee and tea.
+      </p>
+    </aside>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="" role="form" aria-label="Contact Us">
+        <label for="name" role="textbox" aria-label="Name">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          aria-required="true"
+          aria-label="Name"
+          placeholder="Enter your name"
+          minlength="3"
+          maxlength="30"
+        />
+        <label for="email" role="textbox" aria-label="Email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          aria-required="true"
+          aria-label="Email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+        <label for="phone" role="textbox" aria-label="Phone">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          aria-required="true"
+          aria-label="Phone"
+          placeholder="Enter your phone"
+          pattern="[0-9]{10}"
+          maxlength="10"
+        />
+        <label for="message" role="textbox" aria-label="Message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          aria-required="true"
+          aria-label="Message"
+          placeholder="Enter your message"
+          rows="5"
+          cols="30"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="menu">
+      <h2>Menu</h2>
+      <table>
+        <tr>
+          <th>Coffee</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Espresso</td>
+          <td>$1.99</td>
+        </tr>
+        <tr>
+          <td>Latte</td>
+          <td>$2.99</td>
+        </tr>
+        <tr>
+          <td>Cappuccino</td>
+          <td>$3.99</td>
+        </tr>
+        <tr>
+          <td>Americano</td>
+          <td>$4.99</td>
+        </tr>
+        <tr>
+          <td>Tea</td>
+          <td>$1.99</td>
+        </tr>
+      </table>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2025 Coffee Shop</p>
+    </footer>
+  </body>
+</html>
+
 
