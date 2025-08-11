@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop</title>
+    <meta
+      name="description"
+      content="Bean Haven Coffee - Premium coffee shop in Bean City serving ethically sourced coffee, specialty drinks, and fresh pastries since 1995. Order online or visit us at 123 Coffee Street."
+    />
+    <meta
+      name="keywords"
+      content="coffee shop, espresso, latte, Bean City, fair trade coffee, organic coffee, specialty drinks, fresh pastries, online ordering"
+    />
+    <meta name="author" content="Bean Haven Coffee" />
+    <meta
+      property="og:title"
+      content="Bean Haven Coffee - Premium Coffee & More"
+    />
+    <meta
+      property="og:description"
+      content="Your neighborhood coffee destination since 1995. Serving premium coffee with genuine hospitality."
+    />
+    <meta property="og:url" content="https://beanhaven.coffee" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://beanhaven.coffee" />
+
+  </head>
+  <body>
+    <!-- Accessibility Preferences Detection
+    <div
+      id="accessibility-status"
+      class="accessibility-indicator"
+      role="status"
+      aria-live="polite"
+    ></div>
+
+    <!-- Accessibility Controls -->
+    <!-- <div
+      class="accessibility-controls"
+      role="toolbar"
+      aria-label="Accessibility options"
+    >
+      <button
+        type="button"
+        id="high-contrast-toggle"
+        aria-pressed="false"
+        aria-describedby="contrast-help"
+      >
+        <span class="visually-hidden">Toggle </span>High Contrast
+      </button>
+      <div id="contrast-help" class="visually-hidden">
+        Toggles high contrast mode for better visibility
+      </div>
+
+      <button
+        type="button"
+        id="font-size-increase"
+        aria-describedby="font-help"
+      >
+        <span class="visually-hidden">Increase </span>Text Size +
+      </button>
+      <button
+        type="button"
+        id="font-size-decrease"
+        aria-describedby="font-help"
+      >
+        Text Size -
+      </button>
+      <div id="font-help" class="visually-hidden">
+        Adjusts text size for better readability
+      </div>
+
+      <button
+        type="button"
+        id="reduced-motion-toggle"
+        aria-pressed="false"
+        aria-describedby="motion-help"
+      >
+        <span class="visually-hidden">Toggle </span>Reduced Motion
+      </button>
+      <div id="motion-help" class="visually-hidden">
+        Reduces animations and transitions
+      </div>
+    </div> -->
+    <header role="banner">
+      <a href="#main-content" class="skip-link">Skip to main content</a>
+      <a href="#menu" class="skip-link">Skip to menu</a>
+      <a href="#contact" class="skip-link">Skip to contact</a>
+      <a href="#footer-nav" class="skip-link">Skip to footer navigation</a>
+
+      <div
+        class="top-bar"
+        role="complementary"
+        aria-label="Contact information"
+      >
+        <address role="contentinfo">
+          <span aria-label="Address">📍 123 Coffee Street, Bean City</span>
+          <span aria-label="Phone number"
+            >📞
+            <a href="tel:+1234567890" aria-label="Call us at (123) 456-7890"
+              >(123) 456-7890</a
+            ></span
+          >
+          <span aria-label="Store hours"
+            >🕒
+            <time datetime="Mo-Fr 07:00-20:00,Sa-Su 08:00-18:00"
+              >Mon-Fri: 7AM-8PM, Sat-Sun: 8AM-6PM</time
+            ></span
+          >
+        </address>
+        <div class="social-links" role="group" aria-label="Social media links">
+          <a
+            href="https://facebook.com/beanhavencoffee"
+            aria-label="Visit our Facebook page (opens in new tab)"
+            rel="noopener"
+            target="_blank"
+          >
+            <span aria-hidden="true">📘</span>
+            <span class="visually-hidden">Facebook</span>
+          </a>
+          <a
+            href="https://instagram.com/beanhavencoffee"
+            aria-label="Visit our Instagram page (opens in new tab)"
+            rel="noopener"
+            target="_blank"
+          >
+            <span aria-hidden="true">📷</span>
+            <span class="visually-hidden">Instagram</span>
+          </a>
+          <a
+            href="https://twitter.com/beanhavencoffee"
+            aria-label="Visit our Twitter page (opens in new tab)"
+            rel="noopener"
+            target="_blank"
+          >
+            <span aria-hidden="true">🐦</span>
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main header content -->
+      <div class="main-header">
+        <!-- Brand/Logo section -->
+        <div itemscope itemtype="https://schema.org/Organization">
+          <h1 itemprop="name">
+            <a
+              href="#home"
+              aria-label="Bean Haven Coffee - Go to homepage"
+              tabindex="0"
+            >
+              <span aria-hidden="true">☕</span> Bean Haven Coffee
+            </a>
+          </h1>
+          <p class="tagline" itemprop="slogan" role="text">
+            Brewing excellence since 1995
+          </p>
+        </div>
+
+        <!-- Search functionality -->
+        <div role="search" aria-label="Search our coffee menu">
+          <form action="/search" method="get" role="search">
+            <label for="search-input" class="visually-hidden"
+              >Search our menu</label
+            >
+            <input
+              type="search"
+              id="search-input"
+              name="q"
+              placeholder="Search menu..."
+              aria-label="Search our coffee menu"
+              aria-describedby="search-help"
+              autocomplete="off"
+              spellcheck="true"
+            />
+            <div id="search-help" class="visually-hidden">
+              Enter keywords to search our menu items, prices, and descriptions
+            </div>
+            <button type="submit" aria-label="Submit search query" tabindex="0">
+              <span aria-hidden="true">🔍</span>
+              <span class="visually-hidden">Search</span>
+            </button>
+          </form>
+          <!-- Live search results will be announced to screen readers -->
+          <div
+            id="search-results"
+            role="region"
+            aria-live="polite"
+            aria-label="Search results"
+            class="visually-hidden"
+          ></div>
+        </div>
+
+        <!-- Primary navigation -->
+        <nav role="navigation" aria-label="Primary navigation" id="primary-nav">
+          <button
+            type="button"
+            class="mobile-menu-toggle"
+            aria-expanded="false"
+            aria-controls="main-navigation"
+            aria-label="Toggle mobile menu"
+            tabindex="0"
+          >
+            <span aria-hidden="true">☰</span>
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <ul
+            id="main-navigation"
+            role="menubar"
+            aria-label="Main navigation menu"
+          >
+            <li role="none">
+              <a href="#home" role="menuitem" aria-current="page" tabindex="0">
+                <span>Home</span>
+                <span class="visually-hidden"> (current page)</span>
+              </a>
+            </li>
+            <li role="none">
+              <a href="#menu" role="menuitem" tabindex="0">
+                <span>Menu</span>
+                <span class="visually-hidden">
+                  - View our coffee and food offerings</span
+                >
+              </a>
+            </li>
+            <li role="none">
+              <a href="#about" role="menuitem" tabindex="0">
+                <span>About</span>
+                <span class="visually-hidden">
+                  - Learn about our story and mission</span
+                >
+              </a>
+            </li>
+            <li role="none">
+              <a href="#contact" role="menuitem" tabindex="0">
+                <span>Contact</span>
+                <span class="visually-hidden">
+                  - Get in touch or place an order</span
+                >
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Call-to-action buttons -->
+        <div class="header-actions" role="group" aria-label="Quick actions">
+          <a
+            href="#contact"
+            role="button"
+            aria-describedby="order-help"
+            tabindex="0"
+            class="cta-button"
+          >
+            <span>Order Online</span>
+            <span class="visually-hidden">
+              - Place your coffee order for pickup</span
+            >
+          </a>
+          <div id="order-help" class="visually-hidden">
+            Navigate to our order form to place an order for pickup
+          </div>
+          <a
+            href="#contact"
+            role="button"
+            aria-describedby="reserve-help"
+            tabindex="0"
+            class="cta-button"
+          >
+            <span>Reserve Table</span>
+            <span class="visually-hidden">
+              - Reserve a table for dining in</span
+            >
+          </a>
+          <div id="reserve-help" class="visually-hidden">
+            Contact us to reserve a table for your visit
+          </div>
+        </div>
+      </div>
+
+      <!-- Breadcrumb navigation (if needed) -->
+      <nav
+        aria-label="Breadcrumb navigation"
+        class="breadcrumb"
+        role="navigation"
+      >
+        <ol role="list">
+          <li role="listitem">
+            <a href="#home" aria-label="Navigate to home section">Home</a>
+          </li>
+          <li role="listitem" aria-current="page">
+            <span aria-label="Current page: ">Bean Haven Coffee Homepage</span>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section
+        id="hero"
+        class="hero-section"
+        role="region"
+        aria-labelledby="hero-title"
+      >
+        <div class="hero-content">
+          <h2 id="hero-title">Welcome to Bean Haven Coffee</h2>
+          <p
+            class="hero-subtitle"
+            role="text"
+            aria-describedby="hero-description"
+          >
+            Discover the perfect blend of tradition and innovation in every cup
+          </p>
+          <div id="hero-description" class="visually-hidden">
+            Bean Haven Coffee offers premium ethically sourced coffee with
+            exceptional service since 1995
+          </div>
+
+          <div class="hero-stats" role="region" aria-labelledby="stats-title">
+            <h3 id="stats-title" class="visually-hidden">Our Achievements</h3>
+            <div class="stat-item" role="img" aria-labelledby="stat1-label">
+              <strong id="stat1-label" aria-describedby="stat1-desc"
+                >500+</strong
+              >
+              <span id="stat1-desc">Happy Customers Daily</span>
+            </div>
+            <div class="stat-item" role="img" aria-labelledby="stat2-label">
+              <strong id="stat2-label" aria-describedby="stat2-desc"
+                >25+</strong
+              >
+              <span id="stat2-desc">Premium Coffee Varieties</span>
+            </div>
+            <div class="stat-item" role="img" aria-labelledby="stat3-label">
+              <strong id="stat3-label" aria-describedby="stat3-desc"
+                >28 Years</strong
+              >
+              <span id="stat3-desc">Brewing Excellence</span>
+            </div>
+          </div>
+
+          <div class="hero-actions" role="group" aria-label="Primary actions">
+            <a
+              href="#menu"
+              class="cta-button primary"
+              role="button"
+              aria-describedby="menu-action-help"
+              tabindex="0"
+            >
+              <span>View Our Menu</span>
+            </a>
+            <div id="menu-action-help" class="visually-hidden">
+              Browse our complete menu of coffee drinks, food, and retail items
+            </div>
+
+            <a
+              href="#contact"
+              class="cta-button secondary"
+              role="button"
+              aria-describedby="order-action-help"
+              tabindex="0"
+            >
+              <span>Order Now</span>
+            </a>
+            <div id="order-action-help" class="visually-hidden">
+              Place an order for pickup using our online order form
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image" role="img" aria-labelledby="hero-img-desc">
+          <img
+            src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=800&q=80"
+            alt=""
+            role="presentation"
+            loading="lazy"
+          />
+          <div id="hero-img-desc" class="visually-hidden">
+            Interior view of Bean Haven Coffee showing a warm, welcoming
+            atmosphere with customers relaxing at wooden tables, exposed brick
+            walls, and pendant lighting creating a cozy ambiance perfect for
+            enjoying coffee.
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Coffee Section -->
+      <section
+        id="home"
+        class="featured-coffees"
+        role="region"
+        aria-labelledby="coffee-collection-title"
+      >
+        <h2 id="coffee-collection-title">Our Signature Coffee Collection</h2>
+        <p class="section-intro" role="text" id="coffee-intro">
+          Carefully crafted by our master baristas using ethically sourced beans
+          from around the world
+        </p>
+
+        <div
+          class="coffee-grid"
+          role="group"
+          aria-labelledby="coffee-collection-title"
+          aria-describedby="coffee-intro"
+        >
+          <article
+            class="coffee-card"
+            itemscope
+            itemtype="https://schema.org/Product"
+            role="article"
+            aria-labelledby="espresso-title"
+            tabindex="0"
+          >
+            <div
+              class="coffee-image"
+              role="img"
+              aria-labelledby="espresso-img-desc"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1510707577719-ae7c14805e76?auto=format&fit=crop&w=400&q=80"
+                alt=""
+                itemprop="image"
+                role="presentation"
+                loading="lazy"
+              />
+              <div id="espresso-img-desc" class="visually-hidden">
+                Close-up photograph of a rich, dark espresso shot served in a
+                clear glass cup, showing the beautiful crema layer on top and
+                the deep amber color of the coffee.
+              </div>
+              <div
+                class="coffee-badge"
+                role="img"
+                aria-label="Best selling item"
+              >
+                Best Seller
+              </div>
+            </div>
+            <div class="coffee-info">
+              <h3 id="espresso-title" itemprop="name">Signature Espresso</h3>
+              <p class="coffee-origin" role="text" aria-label="Coffee origin">
+                Single Origin - Ethiopian Beans
+              </p>
+              <p class="coffee-description" itemprop="description" role="text">
+                A bold, full-bodied espresso with notes of dark chocolate and
+                caramel. Our signature blend is crafted from premium Ethiopian
+                Arabica beans, roasted to perfection for an intense, aromatic
+                experience.
+              </p>
+              <div
+                class="coffee-details"
+                role="group"
+                aria-label="Product details"
+              >
+                <span
+                  class="strength"
+                  role="img"
+                  aria-label="Coffee strength: 5 out of 5 stars"
+                >
+                  Strength: <span aria-hidden="true">★★★★★</span>
+                </span>
+                <span class="size" role="text"
+                  >Available: Single/Double Shot</span
+                >
+                <div
+                  class="price-range"
+                  itemprop="offers"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                  role="text"
+                  aria-label="Price range from $2.25 to $3.75"
+                >
+                  <span itemprop="price">$2.25</span> -
+                  <span itemprop="priceCurrency" content="USD">$3.75</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="coffee-card"
+            itemscope
+            itemtype="https://schema.org/Product"
+          >
+            <div class="coffee-image">
+              <img
+                src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=400&q=80"
+                alt="Creamy latte with beautiful latte art in white ceramic cup"
+                itemprop="image"
+              />
+              <div class="coffee-badge new">New Recipe</div>
+            </div>
+            <div class="coffee-info">
+              <h3 itemprop="name">Artisan Vanilla Latte</h3>
+              <p class="coffee-origin">House Blend - Colombian & Brazilian</p>
+              <p class="coffee-description" itemprop="description">
+                Smooth espresso combined with perfectly steamed milk and our
+                house-made vanilla syrup. Topped with exquisite latte art by our
+                certified baristas. A perfect balance of coffee strength and
+                creamy sweetness.
+              </p>
+              <div class="coffee-details">
+                <span class="strength">Strength: ★★★☆☆</span>
+                <span class="size">Available: 8oz/12oz/16oz</span>
+                <div
+                  class="price-range"
+                  itemprop="offers"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                >
+                  <span itemprop="price">$3.95</span> -
+                  <span itemprop="priceCurrency" content="USD">$5.95</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="coffee-card"
+            itemscope
+            itemtype="https://schema.org/Product"
+          >
+            <div class="coffee-image">
+              <img
+                src="https://images.unsplash.com/photo-1545665225-b23b99e4d45e?auto=format&fit=crop&w=400&q=80"
+                alt="Classic cappuccino with perfect foam microfoam"
+                itemprop="image"
+              />
+              <div class="coffee-badge">Traditional</div>
+            </div>
+            <div class="coffee-info">
+              <h3 itemprop="name">Classic Cappuccino</h3>
+              <p class="coffee-origin">Italian Roast - Authentic Recipe</p>
+              <p class="coffee-description" itemprop="description">
+                Traditional Italian cappuccino with equal parts espresso,
+                steamed milk, and velvety microfoam. Made with our Italian roast
+                blend and served in authentic 6oz ceramic cups for the perfect
+                coffee-to-milk ratio.
+              </p>
+              <div class="coffee-details">
+                <span class="strength">Strength: ★★★★☆</span>
+                <span class="size">Available: 6oz Traditional</span>
+                <div
+                  class="price-range"
+                  itemprop="offers"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                >
+                  <span itemprop="price">$3.45</span>
+                  <span itemprop="priceCurrency" content="USD"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="coffee-card"
+            itemscope
+            itemtype="https://schema.org/Product"
+          >
+            <div class="coffee-image">
+              <img
+                src="https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=400&q=80"
+                alt="Black Americano coffee in transparent glass mug"
+                itemprop="image"
+              />
+              <div class="coffee-badge">Light Roast</div>
+            </div>
+            <div class="coffee-info">
+              <h3 itemprop="name">Sunrise Americano</h3>
+              <p class="coffee-origin">Light Roast - Guatemalan Highlands</p>
+              <p class="coffee-description" itemprop="description">
+                A bright, clean coffee experience made with our light roast
+                Guatemalan beans. Hot water is carefully added to a double shot
+                of espresso, creating a smooth, full-flavored cup with subtle
+                citrus notes.
+              </p>
+              <div class="coffee-details">
+                <span class="strength">Strength: ★★★☆☆</span>
+                <span class="size">Available: 8oz/12oz/16oz</span>
+                <div
+                  class="price-range"
+                  itemprop="offers"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                >
+                  <span itemprop="price">$2.95</span> -
+                  <span itemprop="priceCurrency" content="USD">$4.25</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="coffee-card"
+            itemscope
+            itemtype="https://schema.org/Product"
+          >
+            <div class="coffee-image">
+              <img
+                src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=400&q=80"
+                alt="Herbal tea selection with fresh ingredients"
+                itemprop="image"
+              />
+              <div class="coffee-badge">Organic</div>
+            </div>
+            <div class="coffee-info">
+              <h3 itemprop="name">Wellness Tea Collection</h3>
+              <p class="coffee-origin">Organic - Various Origins</p>
+              <p class="coffee-description" itemprop="description">
+                A curated selection of premium organic teas including Earl Grey,
+                Green Jasmine, Chamomile Honey, and seasonal herbal blends. All
+                teas are sourced from certified organic farms and steeped fresh
+                to order.
+              </p>
+              <div class="coffee-details">
+                <span class="strength">Caffeine: Varies by Selection</span>
+                <span class="size">Available: Hot/Iced</span>
+                <div
+                  class="price-range"
+                  itemprop="offers"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                >
+                  <span itemprop="price">$2.75</span> -
+                  <span itemprop="priceCurrency" content="USD">$4.50</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Special Offers Section -->
+      <section id="offers" class="special-offers">
+        <h2>Today's Special Offers</h2>
+        <div class="offers-grid">
+          <div class="offer-card" itemscope itemtype="https://schema.org/Offer">
+            <h3 itemprop="name">Happy Hour Special</h3>
+            <p class="offer-time">Daily 2PM - 5PM</p>
+            <p itemprop="description">
+              Buy any large specialty drink and get a free pastry of your choice
+            </p>
+            <span class="offer-discount" itemprop="price"
+              >Save up to $4.95</span
+            >
+          </div>
+          <div class="offer-card" itemscope itemtype="https://schema.org/Offer">
+            <h3 itemprop="name">Student Discount</h3>
+            <p class="offer-time">All Day with Valid ID</p>
+            <p itemprop="description">
+              20% off all coffee drinks for students and faculty
+            </p>
+            <span class="offer-discount" itemprop="price">20% OFF</span>
+          </div>
+          <div class="offer-card" itemscope itemtype="https://schema.org/Offer">
+            <h3 itemprop="name">Loyalty Card</h3>
+            <p class="offer-time">Ongoing Program</p>
+            <p itemprop="description">
+              Buy 10 coffees, get the 11th free! Plus exclusive member perks
+            </p>
+            <span class="offer-discount" itemprop="price">Free Coffee</span>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section
+        id="about"
+        class="about-section"
+        itemscope
+        itemtype="https://schema.org/LocalBusiness"
+      >
+        <h2>About Bean Haven Coffee</h2>
+
+        <div class="about-content">
+          <div class="about-story">
+            <h3>Our Story</h3>
+            <p>
+              <em
+                >Founded in 1995 by coffee enthusiasts Maria and Giuseppe
+                Romano</em
+              >, Bean Haven Coffee began as a small family-owned roastery in the
+              heart of Bean City. What started as a passion project has grown
+              into the community's beloved coffee destination, serving over 500
+              customers daily with the same commitment to quality and warmth
+              that defined our humble beginnings.
+            </p>
+            <p>
+              We believe that great coffee brings people together. Every cup we
+              serve is a testament to our dedication to ethical sourcing, expert
+              roasting, and genuine hospitality. Our beans are sourced directly
+              from family farms in Colombia, Ethiopia, Guatemala, and Brazil,
+              ensuring fair wages for farmers and the finest quality for our
+              customers.
+            </p>
+          </div>
+
+          <div class="about-mission">
+            <h3>Our Mission</h3>
+            <blockquote>
+              "To create a welcoming space where exceptional coffee, genuine
+              connections, and community spirit come together, one cup at a
+              time."
+            </blockquote>
+          </div>
+
+          <div class="about-values">
+            <h3>Our Values</h3>
+            <ul>
+              <li>
+                <strong>Quality First:</strong> We never compromise on the
+                quality of our beans, equipment, or service
+              </li>
+              <li>
+                <strong>Ethical Sourcing:</strong> Direct trade partnerships
+                with coffee farmers worldwide
+              </li>
+              <li>
+                <strong>Community Focus:</strong> Supporting local artists,
+                musicians, and community events
+              </li>
+              <li>
+                <strong>Environmental Care:</strong> Sustainable practices from
+                bean to cup
+              </li>
+              <li>
+                <strong>Continuous Learning:</strong> Our baristas undergo
+                regular training and certification
+              </li>
+            </ul>
+          </div>
+
+          <div class="about-team">
+            <h3>Meet Our Master Baristas</h3>
+            <div class="team-grid">
+              <div
+                class="team-member"
+                itemscope
+                itemtype="https://schema.org/Person"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+                  alt="Giuseppe Romano, Head Barista and Co-founder"
+                />
+                <h4 itemprop="name">Giuseppe Romano</h4>
+                <p itemprop="jobTitle">Head Barista & Co-founder</p>
+                <p>25+ years experience, Certified Q Grader</p>
+              </div>
+              <div
+                class="team-member"
+                itemscope
+                itemtype="https://schema.org/Person"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1494790108755-2616b612b372?auto=format&fit=crop&w=150&q=80"
+                  alt="Maria Romano, Operations Manager and Co-founder"
+                />
+                <h4 itemprop="name">Maria Romano</h4>
+                <p itemprop="jobTitle">Operations Manager & Co-founder</p>
+                <p>
+                  Expert in coffee business operations and customer experience
+                </p>
+              </div>
+              <div
+                class="team-member"
+                itemscope
+                itemtype="https://schema.org/Person"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&q=80"
+                  alt="James Chen, Senior Barista"
+                />
+                <h4 itemprop="name">James Chen</h4>
+                <p itemprop="jobTitle">Senior Barista</p>
+                <p>Latte art specialist, SCA Certified</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Store Hours & Location -->
+      <section id="hours-location" class="hours-location">
+        <h2>Visit Us Today</h2>
+        <div
+          class="location-info"
+          itemscope
+          itemtype="https://schema.org/LocalBusiness"
+        >
+          <div class="store-hours">
+            <h3>Store Hours</h3>
+            <div class="hours-grid">
+              <div class="day-hours">
+                <span class="day">Monday - Friday</span>
+                <time
+                  class="hours"
+                  itemprop="openingHours"
+                  datetime="Mo-Fr 06:00-20:00"
+                  >6:00 AM - 8:00 PM</time
+                >
+              </div>
+              <div class="day-hours">
+                <span class="day">Saturday</span>
+                <time
+                  class="hours"
+                  itemprop="openingHours"
+                  datetime="Sa 07:00-21:00"
+                  >7:00 AM - 9:00 PM</time
+                >
+              </div>
+              <div class="day-hours">
+                <span class="day">Sunday</span>
+                <time
+                  class="hours"
+                  itemprop="openingHours"
+                  datetime="Su 08:00-18:00"
+                  >8:00 AM - 6:00 PM</time
+                >
+              </div>
+            </div>
+            <p class="holiday-note">
+              <em
+                >Holiday hours may vary. Follow us on social media for
+                updates.</em
+              >
+            </p>
+          </div>
+
+          <div class="location-details">
+            <h3>Location & Contact</h3>
+            <address
+              itemprop="address"
+              itemscope
+              itemtype="https://schema.org/PostalAddress"
+            >
+              <p>
+                <span itemprop="streetAddress">123 Coffee Street</span><br />
+                <span itemprop="addressLocality">Bean City</span>,
+                <span itemprop="addressRegion">CA</span>
+                <span itemprop="postalCode">94102</span>
+              </p>
+              <p>
+                Phone:
+                <a href="tel:+14155551234" itemprop="telephone"
+                  >(415) 555-1234</a
+                ><br />
+                Email:
+                <a href="mailto:hello@beanhaven.coffee" itemprop="email"
+                  >hello@beanhaven.coffee</a
+                >
+              </p>
+            </address>
+
+            <div class="parking-info">
+              <h4>Parking & Accessibility</h4>
+              <ul>
+                <li>✅ Free parking available (2-hour limit)</li>
+                <li>✅ Wheelchair accessible entrance</li>
+                <li>✅ ADA compliant restrooms</li>
+                <li>✅ Pet-friendly outdoor seating</li>
+                <li>✅ Free WiFi for customers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Testimonials -->
+      <section id="testimonials" class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-grid">
+          <blockquote
+            class="testimonial"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <p itemprop="reviewBody">
+              "The best coffee in Bean City! Giuseppe makes the perfect
+              cappuccino every time. The atmosphere is cozy and welcoming - it's
+              become my daily ritual."
+            </p>
+            <cite>
+              <span itemprop="author">Sarah Johnson</span>
+              <span class="customer-type">Regular Customer (3 years)</span>
+              <div
+                class="rating"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <span itemprop="ratingValue" content="5">★★★★★</span>
+              </div>
+            </cite>
+          </blockquote>
+
+          <blockquote
+            class="testimonial"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <p itemprop="reviewBody">
+              "Amazing quality and the baristas really know their craft. The
+              Ethiopian espresso is incredible and the latte art is
+              Instagram-worthy every single time!"
+            </p>
+            <cite>
+              <span itemprop="author">Michael Rodriguez</span>
+              <span class="customer-type">Coffee Enthusiast</span>
+              <div
+                class="rating"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <span itemprop="ratingValue" content="5">★★★★★</span>
+              </div>
+            </cite>
+          </blockquote>
+
+          <blockquote
+            class="testimonial"
+            itemscope
+            itemtype="https://schema.org/Review"
+          >
+            <p itemprop="reviewBody">
+              "As a student, I appreciate the discount and quiet atmosphere for
+              studying. The WiFi is fast and they have plenty of power outlets.
+              Great study spot!"
+            </p>
+            <cite>
+              <span itemprop="author">Emma Chen</span>
+              <span class="customer-type">University Student</span>
+              <div
+                class="rating"
+                itemprop="reviewRating"
+                itemscope
+                itemtype="https://schema.org/Rating"
+              >
+                <span itemprop="ratingValue" content="5">★★★★★</span>
+              </div>
+            </cite>
+          </blockquote>
+        </div>
+      </section>
+      <!-- Contact & Online Order Section -->
+      <section id="contact" class="contact-section">
+        <h2>Contact Us & Order Online</h2>
+        <p class="section-intro">
+          Get in touch with us for catering, private events, or general
+          inquiries. You can also place your order online for pickup!
+        </p>
+
+        <div class="contact-methods">
+          <div class="contact-method">
+            <h3>📞 Phone Orders</h3>
+            <p>Call us directly for immediate assistance</p>
+            <a href="tel:+14155551234" class="contact-link">(415) 555-1234</a>
+            <p class="hours-note">Available during store hours</p>
+          </div>
+
+          <div class="contact-method">
+            <h3>📱 Text Orders</h3>
+            <p>Send us a text with your order</p>
+            <a href="sms:+14155551234" class="contact-link">(415) 555-1234</a>
+            <p class="hours-note">Response within 15 minutes</p>
+          </div>
+
+          <div class="contact-method">
+            <h3>✉️ Email</h3>
+            <p>For catering and special requests</p>
+            <a href="mailto:hello@beanhaven.coffee" class="contact-link"
+              >hello@beanhaven.coffee</a
+            >
+            <p class="hours-note">Response within 24 hours</p>
+          </div>
+        </div>
+
+        <!-- Online Order Form -->
+        <div class="order-form-container">
+          <form
+            action="/submit-order"
+            method="post"
+            role="form"
+            aria-label="Online Coffee Order Form"
+            class="online-order-form"
+          >
+            <fieldset>
+              <legend>Customer Information</legend>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="customer-name" aria-label="Full Name"
+                    >Full Name *</label
+                  >
+                  <input
+                    type="text"
+                    id="customer-name"
+                    name="customerName"
+                    required
+                    aria-required="true"
+                    aria-describedby="name-help"
+                    placeholder="John Smith"
+                    minlength="2"
+                    maxlength="50"
+                    autocomplete="name"
+                  />
+                  <small id="name-help" class="form-help"
+                    >Enter your full name as it appears on your ID</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="customer-email" aria-label="Email Address"
+                    >Email Address *</label
+                  >
+                  <input
+                    type="email"
+                    id="customer-email"
+                    name="customerEmail"
+                    required
+                    aria-required="true"
+                    aria-describedby="email-help"
+                    placeholder="john@example.com"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                    autocomplete="email"
+                  />
+                  <small id="email-help" class="form-help"
+                    >We'll send your order confirmation here</small
+                  >
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="customer-phone" aria-label="Phone Number"
+                    >Phone Number *</label
+                  >
+                  <input
+                    type="tel"
+                    id="customer-phone"
+                    name="customerPhone"
+                    required
+                    aria-required="true"
+                    aria-describedby="phone-help"
+                    placeholder="(415) 555-0123"
+                    pattern="\([0-9]{3}\) [0-9]{3}-[0-9]{4}"
+                    autocomplete="tel"
+                  />
+                  <small id="phone-help" class="form-help"
+                    >Format: (415) 555-0123</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="order-type">Order Type *</label>
+                  <select
+                    id="order-type"
+                    name="orderType"
+                    required
+                    aria-required="true"
+                  >
+                    <option value="">Select order type...</option>
+                    <option value="pickup">Pickup</option>
+                    <option value="dine-in">Dine-in</option>
+                    <option value="catering">Catering (10+ items)</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Order Details</legend>
+
+              <div class="form-group">
+                <label for="pickup-time">Preferred Pickup Time</label>
+                <input
+                  type="datetime-local"
+                  id="pickup-time"
+                  name="pickupTime"
+                  aria-describedby="pickup-help"
+                  min="2024-01-01T06:00"
+                  max="2024-12-31T20:00"
+                />
+                <small id="pickup-help" class="form-help"
+                  >Leave blank for ASAP (usually 10-15 minutes)</small
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="order-items">Order Items *</label>
+                <textarea
+                  id="order-items"
+                  name="orderItems"
+                  required
+                  aria-required="true"
+                  aria-describedby="items-help"
+                  placeholder="Example:\n1x Large Signature Espresso\n2x Medium Vanilla Latte (oat milk)\n1x Blueberry Muffin"
+                  rows="6"
+                  minlength="10"
+                  maxlength="500"
+                ></textarea>
+                <small id="items-help" class="form-help"
+                  >List each item with size and any modifications. Check our
+                  menu below for current offerings.</small
+                >
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="dietary-restrictions"
+                    >Dietary Restrictions/Allergies</label
+                  >
+                  <input
+                    type="text"
+                    id="dietary-restrictions"
+                    name="dietaryRestrictions"
+                    placeholder="e.g., lactose intolerant, nut allergy"
+                    maxlength="100"
+                    aria-describedby="dietary-help"
+                  />
+                  <small id="dietary-help" class="form-help"
+                    >Help us serve you safely</small
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="payment-method">Preferred Payment Method</label>
+                  <select id="payment-method" name="paymentMethod">
+                    <option value="">Select payment method...</option>
+                    <option value="cash">Cash</option>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="mobile">
+                      Mobile Payment (Apple Pay, Google Pay)
+                    </option>
+                    <option value="gift-card">Gift Card</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Additional Information</legend>
+
+              <div class="form-group">
+                <label for="special-instructions">Special Instructions</label>
+                <textarea
+                  id="special-instructions"
+                  name="specialInstructions"
+                  placeholder="Any special requests, modifications, or notes for our baristas..."
+                  rows="3"
+                  maxlength="300"
+                  aria-describedby="instructions-help"
+                ></textarea>
+                <small id="instructions-help" class="form-help"
+                  >Optional: extra hot, decaf, specific latte art, etc.</small
+                >
+              </div>
+
+              <div class="form-group checkbox-group">
+                <input
+                  type="checkbox"
+                  id="loyalty-signup"
+                  name="loyaltySignup"
+                  value="yes"
+                />
+                <label for="loyalty-signup"
+                  >Sign me up for the Bean Haven Loyalty Program (free!)</label
+                >
+              </div>
+
+              <div class="form-group checkbox-group">
+                <input
+                  type="checkbox"
+                  id="newsletter"
+                  name="newsletter"
+                  value="yes"
+                />
+                <label for="newsletter"
+                  >Subscribe to our weekly newsletter for specials and
+                  events</label
+                >
+              </div>
+
+              <div class="form-group checkbox-group">
+                <input
+                  type="checkbox"
+                  id="privacy-consent"
+                  name="privacyConsent"
+                  value="yes"
+                  required
+                  aria-required="true"
+                />
+                <label for="privacy-consent"
+                  >I agree to the
+                  <a href="/privacy" target="_blank">Privacy Policy</a> and
+                  <a href="/terms" target="_blank">Terms of Service</a> *</label
+                >
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button type="reset" class="btn-secondary">Clear Form</button>
+              <button type="submit" class="btn-primary">Place Order</button>
+            </div>
+
+            <p class="form-note">
+              <strong>Order Confirmation:</strong> You'll receive an email and
+              SMS confirmation within 2 minutes. If you don't receive
+              confirmation, please call us at (415) 555-1234.
+            </p>
+          </form>
+        </div>
+
+        <!-- Contact Information Summary -->
+        <div class="contact-summary">
+          <h3>Need Help?</h3>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <strong>General Inquiries</strong>
+              <p>hello@beanhaven.coffee</p>
+            </div>
+            <div class="contact-item">
+              <strong>Catering & Events</strong>
+              <p>catering@beanhaven.coffee</p>
+            </div>
+            <div class="contact-item">
+              <strong>Wholesale & Business</strong>
+              <p>wholesale@beanhaven.coffee</p>
+            </div>
+            <div class="contact-item">
+              <strong>Press & Media</strong>
+              <p>media@beanhaven.coffee</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Comprehensive Menu Section -->
+      <section id="menu" class="menu-section">
+        <h2>Our Complete Menu</h2>
+        <p class="menu-intro">
+          All prices include tax. We proudly serve organic, fair-trade coffee
+          and fresh, locally-sourced ingredients.
+        </p>
+
+        <!-- Menu Navigation -->
+        <nav
+          class="menu-nav"
+          role="tablist"
+          aria-label="Menu categories navigation"
+        >
+          <button
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="espresso-menu"
+            id="espresso-tab"
+            class="menu-tab active"
+            tabindex="0"
+            aria-describedby="espresso-tab-desc"
+          >
+            Espresso Drinks
+          </button>
+          <div id="espresso-tab-desc" class="visually-hidden">
+            Coffee-based drinks made with espresso shots
+          </div>
+
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="specialty-menu"
+            id="specialty-tab"
+            class="menu-tab"
+            tabindex="-1"
+            aria-describedby="specialty-tab-desc"
+          >
+            Specialty Drinks
+          </button>
+          <div id="specialty-tab-desc" class="visually-hidden">
+            House signature drinks and seasonal favorites
+          </div>
+
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="cold-menu"
+            id="cold-tab"
+            class="menu-tab"
+            tabindex="-1"
+            aria-describedby="cold-tab-desc"
+          >
+            Cold Beverages
+          </button>
+          <div id="cold-tab-desc" class="visually-hidden">
+            Iced coffees, cold brews, and frozen drinks
+          </div>
+
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="tea-menu"
+            id="tea-tab"
+            class="menu-tab"
+            tabindex="-1"
+            aria-describedby="tea-tab-desc"
+          >
+            Teas & Alternatives
+          </button>
+          <div id="tea-tab-desc" class="visually-hidden">
+            Premium teas, matcha, and non-coffee beverages
+          </div>
+
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="food-menu"
+            id="food-tab"
+            class="menu-tab"
+            tabindex="-1"
+            aria-describedby="food-tab-desc"
+          >
+            Food & Pastries
+          </button>
+          <div id="food-tab-desc" class="visually-hidden">
+            Breakfast items, pastries, and light lunch options
+          </div>
+
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="retail-menu"
+            id="retail-tab"
+            class="menu-tab"
+            tabindex="-1"
+            aria-describedby="retail-tab-desc"
+          >
+            Retail & Beans
+          </button>
+          <div id="retail-tab-desc" class="visually-hidden">
+            Coffee beans, equipment, and merchandise to take home
+          </div>
+        </nav>
+
+        <!-- Espresso Drinks Menu -->
+        <div
+          id="espresso-menu"
+          role="tabpanel"
+          aria-labelledby="espresso-tab"
+          class="menu-category active"
+          tabindex="0"
+        >
+          <h3 id="espresso-section-title">Espresso-Based Drinks</h3>
+          <p class="category-description" role="text" id="espresso-description">
+            Made with our signature house blend or single-origin options
+          </p>
+
+          <table
+            class="menu-table"
+            role="table"
+            aria-labelledby="espresso-section-title"
+            aria-describedby="espresso-description table-help"
+          >
+            <div id="table-help" class="visually-hidden">
+              Table with 5 columns: Item name, Description, Small size price,
+              Medium size price, and Large size price. Use arrow keys to
+              navigate between cells.
+            </div>
+            <caption class="visually-hidden">
+              Espresso-based coffee drinks with descriptions and pricing for
+              different sizes
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col" aria-sort="none">Item</th>
+                <th scope="col" aria-sort="none">Description</th>
+                <th scope="col" aria-sort="none">Small</th>
+                <th scope="col" aria-sort="none">Medium</th>
+                <th scope="col" aria-sort="none">Large</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr role="row">
+                <th scope="row" role="rowheader">
+                  <strong>Espresso</strong>
+                  <span
+                    role="img"
+                    aria-label="Customer favorite"
+                    title="Customer favorite"
+                    >★</span
+                  >
+                </th>
+                <td role="cell" aria-describedby="espresso-desc">
+                  <span id="espresso-desc">
+                    Rich, concentrated coffee shot. Our signature Ethiopian
+                    blend.
+                  </span>
+                </td>
+                <td role="cell" aria-label="Single shot espresso, $2.25">
+                  Single: $2.25
+                </td>
+                <td role="cell" aria-label="Double shot espresso, $3.25">
+                  Double: $3.25
+                </td>
+                <td role="cell" aria-label="Triple shot espresso, $4.25">
+                  Triple: $4.25
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Americano</strong></td>
+                <td>Espresso with hot water. Clean, bright flavor profile.</td>
+                <td>8oz: $2.95</td>
+                <td>12oz: $3.45</td>
+                <td>16oz: $4.25</td>
+              </tr>
+              <tr>
+                <td><strong>Cappuccino</strong> ★</td>
+                <td>
+                  Equal parts espresso, steamed milk, and velvety microfoam.
+                </td>
+                <td>6oz: $3.45</td>
+                <td>8oz: $3.95</td>
+                <td>12oz: $4.75</td>
+              </tr>
+              <tr>
+                <td><strong>Latte</strong></td>
+                <td>
+                  Espresso with steamed milk and light foam. Perfect canvas for
+                  latte art.
+                </td>
+                <td>8oz: $3.95</td>
+                <td>12oz: $4.75</td>
+                <td>16oz: $5.95</td>
+              </tr>
+              <tr>
+                <td><strong>Flat White</strong></td>
+                <td>
+                  Double shot with steamed milk. Strong coffee flavor, velvety
+                  texture.
+                </td>
+                <td>6oz: $3.75</td>
+                <td>8oz: $4.25</td>
+                <td>10oz: $4.95</td>
+              </tr>
+              <tr>
+                <td><strong>Macchiato</strong></td>
+                <td>
+                  Espresso "marked" with a dollop of foamed milk. Intense coffee
+                  experience.
+                </td>
+                <td>Single: $2.75</td>
+                <td>Double: $3.75</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><strong>Cortado</strong></td>
+                <td>
+                  Equal parts espresso and warm milk. Spanish-style coffee.
+                </td>
+                <td>4oz: $3.25</td>
+                <td>6oz: $3.95</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="menu-notes">
+            <h4>Milk Options (no extra charge):</h4>
+            <p>
+              Whole, 2%, Oat, Almond, Soy, Coconut | Extra shot: +$0.75 | Decaf
+              available | Sugar-free syrups available
+            </p>
+          </div>
+        </div>
+
+        <!-- Specialty Drinks Menu -->
+        <div
+          id="specialty-menu"
+          role="tabpanel"
+          aria-labelledby="specialty-tab"
+          class="menu-category"
+        >
+          <h3>Signature Specialty Drinks</h3>
+          <p class="category-description">
+            House creations and seasonal favorites
+          </p>
+
+          <table
+            class="menu-table"
+            role="table"
+            aria-label="Specialty Drinks Menu"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Description</th>
+                <th scope="col">Medium</th>
+                <th scope="col">Large</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Bean Haven Mocha</strong> ★</td>
+                <td>
+                  House espresso, Belgian chocolate, steamed milk, whipped
+                  cream, cocoa dust
+                </td>
+                <td>12oz: $5.25</td>
+                <td>16oz: $6.45</td>
+              </tr>
+              <tr>
+                <td><strong>Caramel Cloud Latte</strong></td>
+                <td>
+                  Espresso, house-made caramel, steamed milk, salted caramel
+                  foam
+                </td>
+                <td>12oz: $5.45</td>
+                <td>16oz: $6.65</td>
+              </tr>
+              <tr>
+                <td><strong>Vanilla Bean Dream</strong></td>
+                <td>
+                  Double shot, Madagascar vanilla, steamed milk, vanilla bean
+                  specks
+                </td>
+                <td>12oz: $4.95</td>
+                <td>16oz: $5.95</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Honey Cinnamon Cortado</strong>
+                  <span class="seasonal">SEASONAL</span>
+                </td>
+                <td>Double shot, local honey, Ceylon cinnamon, steamed milk</td>
+                <td>6oz: $4.25</td>
+                <td>8oz: $4.95</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Maple Pecan Latte</strong>
+                  <span class="seasonal">SEASONAL</span>
+                </td>
+                <td>
+                  Espresso, maple syrup, pecan praline, oat milk, candied pecans
+                </td>
+                <td>12oz: $5.75</td>
+                <td>16oz: $6.95</td>
+              </tr>
+              <tr>
+                <td><strong>Spiced Chai Latte</strong></td>
+                <td>House-blended chai, steamed milk, warming spices, honey</td>
+                <td>12oz: $4.45</td>
+                <td>16oz: $5.25</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Golden Turmeric Latte</strong>
+                  <span class="healthy">WELLNESS</span>
+                </td>
+                <td>
+                  Turmeric, ginger, cinnamon, black pepper, steamed coconut
+                  milk, honey
+                </td>
+                <td>12oz: $4.75</td>
+                <td>16oz: $5.45</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Cold Beverages Menu -->
+        <div
+          id="cold-menu"
+          role="tabpanel"
+          aria-labelledby="cold-tab"
+          class="menu-category"
+        >
+          <h3>Cold Beverages</h3>
+          <p class="category-description">Refreshing drinks for any season</p>
+
+          <table
+            class="menu-table"
+            role="table"
+            aria-label="Cold Beverages Menu"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Description</th>
+                <th scope="col">Medium</th>
+                <th scope="col">Large</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Iced Coffee</strong></td>
+                <td>
+                  Fresh-brewed coffee over ice. Choice of house blend or single
+                  origin.
+                </td>
+                <td>12oz: $2.95</td>
+                <td>16oz: $3.75</td>
+              </tr>
+              <tr>
+                <td><strong>Cold Brew</strong> ★</td>
+                <td>
+                  Smooth, less acidic. Steeped for 18 hours. Served over ice.
+                </td>
+                <td>12oz: $3.45</td>
+                <td>16oz: $4.25</td>
+              </tr>
+              <tr>
+                <td><strong>Nitro Cold Brew</strong></td>
+                <td>
+                  Cold brew infused with nitrogen. Creamy, cascading texture.
+                </td>
+                <td>12oz: $3.95</td>
+                <td>16oz: $4.75</td>
+              </tr>
+              <tr>
+                <td><strong>Iced Latte</strong></td>
+                <td>
+                  Espresso over ice with cold milk. Refreshing and smooth.
+                </td>
+                <td>12oz: $4.25</td>
+                <td>16oz: $5.25</td>
+              </tr>
+              <tr>
+                <td><strong>Iced Caramel Macchiato</strong></td>
+                <td>
+                  Vanilla syrup, cold milk, espresso, caramel drizzle over ice
+                </td>
+                <td>12oz: $5.25</td>
+                <td>16oz: $6.25</td>
+              </tr>
+              <tr>
+                <td><strong>Frappuccino-Style Blends</strong></td>
+                <td>
+                  Coffee, milk, ice blended. Flavors: Mocha, Caramel, Vanilla
+                </td>
+                <td>12oz: $5.45</td>
+                <td>16oz: $6.45</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Sparkling Coffee Tonic</strong>
+                  <span class="new">NEW</span>
+                </td>
+                <td>Cold brew, tonic water, fresh lemon, served over ice</td>
+                <td>12oz: $3.75</td>
+                <td>16oz: $4.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Teas & Alternatives Menu -->
+        <div
+          id="tea-menu"
+          role="tabpanel"
+          aria-labelledby="tea-tab"
+          class="menu-category"
+        >
+          <h3>Teas & Coffee Alternatives</h3>
+          <p class="category-description">
+            Premium loose-leaf teas and caffeine-free options
+          </p>
+
+          <table
+            class="menu-table"
+            role="table"
+            aria-label="Teas and Alternatives Menu"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Description</th>
+                <th scope="col">Hot</th>
+                <th scope="col">Iced</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Earl Grey Supreme</strong></td>
+                <td>Classic bergamot black tea with cornflower petals</td>
+                <td>$2.95</td>
+                <td>$3.25</td>
+              </tr>
+              <tr>
+                <td><strong>Dragon Well Green Tea</strong></td>
+                <td>Delicate Chinese green tea with subtle sweetness</td>
+                <td>$2.95</td>
+                <td>$3.25</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Chamomile Dreams</strong>
+                  <span class="healthy">WELLNESS</span>
+                </td>
+                <td>Caffeine-free herbal blend with honey and lavender</td>
+                <td>$3.25</td>
+                <td>$3.45</td>
+              </tr>
+              <tr>
+                <td><strong>Peppermint Fresh</strong></td>
+                <td>Organic peppermint leaves. Refreshing and soothing.</td>
+                <td>$2.75</td>
+                <td>$3.15</td>
+              </tr>
+              <tr>
+                <td><strong>Rooibos Vanilla</strong></td>
+                <td>South African red bush tea with natural vanilla</td>
+                <td>$3.15</td>
+                <td>$3.35</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Matcha Latte</strong>
+                  <span class="healthy">WELLNESS</span>
+                </td>
+                <td>Ceremonial-grade matcha with steamed milk</td>
+                <td>$4.25</td>
+                <td>$4.75</td>
+              </tr>
+              <tr>
+                <td><strong>London Fog</strong></td>
+                <td>Earl Grey with steamed milk and vanilla syrup</td>
+                <td>$3.75</td>
+                <td>$4.25</td>
+              </tr>
+              <tr>
+                <td><strong>Hot Chocolate</strong></td>
+                <td>
+                  Rich Belgian chocolate with steamed milk and whipped cream
+                </td>
+                <td>$3.95</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Food & Pastries Menu -->
+        <div
+          id="food-menu"
+          role="tabpanel"
+          aria-labelledby="food-tab"
+          class="menu-category"
+        >
+          <h3>Fresh Food & Pastries</h3>
+          <p class="category-description">
+            Made fresh daily by our local bakery partners
+          </p>
+
+          <div class="food-sections">
+            <div class="food-section">
+              <h4>Breakfast Items</h4>
+              <table
+                class="menu-table compact"
+                role="table"
+                aria-label="Breakfast Menu"
+              >
+                <tbody>
+                  <tr>
+                    <td><strong>Avocado Toast</strong></td>
+                    <td>
+                      Multigrain bread, smashed avocado, tomato, sea salt, olive
+                      oil
+                    </td>
+                    <td>$7.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Breakfast Sandwich</strong></td>
+                    <td>
+                      Egg, cheese, choice of bacon or sausage on croissant
+                    </td>
+                    <td>$8.95</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Overnight Oats</strong>
+                      <span class="healthy">HEALTHY</span>
+                    </td>
+                    <td>
+                      Steel-cut oats, berries, nuts, honey. Seasonal varieties.
+                    </td>
+                    <td>$5.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Greek Yogurt Parfait</strong></td>
+                    <td>Organic yogurt, granola, fresh berries, local honey</td>
+                    <td>$6.45</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Acai Bowl</strong>
+                      <span class="healthy">SUPERFOOD</span>
+                    </td>
+                    <td>Acai blend, granola, banana, strawberries, coconut</td>
+                    <td>$9.95</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="food-section">
+              <h4>Fresh Pastries & Baked Goods</h4>
+              <table
+                class="menu-table compact"
+                role="table"
+                aria-label="Pastries Menu"
+              >
+                <tbody>
+                  <tr>
+                    <td><strong>Butter Croissant</strong></td>
+                    <td>Classic French pastry, flaky and buttery</td>
+                    <td>$2.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Chocolate Croissant</strong></td>
+                    <td>Pain au chocolat with Belgian dark chocolate</td>
+                    <td>$3.45</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Blueberry Muffin</strong></td>
+                    <td>Made with wild Maine blueberries, lemon zest</td>
+                    <td>$3.25</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Banana Bread</strong></td>
+                    <td>Moist, house-made with local organic bananas</td>
+                    <td>$2.75</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Scone of the Day</strong></td>
+                    <td>Rotating flavors: cranberry-orange, lavender-honey</td>
+                    <td>$3.75</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cinnamon Roll</strong></td>
+                    <td>House-made with cream cheese glaze</td>
+                    <td>$4.25</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="food-section">
+              <h4>Light Lunch Options</h4>
+              <table
+                class="menu-table compact"
+                role="table"
+                aria-label="Lunch Menu"
+              >
+                <tbody>
+                  <tr>
+                    <td><strong>Grilled Panini</strong></td>
+                    <td>Choice of: Italian, Turkey & Swiss, or Caprese</td>
+                    <td>$8.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Fresh Salad</strong></td>
+                    <td>Mixed greens, seasonal vegetables, house dressing</td>
+                    <td>$7.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Soup of the Day</strong></td>
+                    <td>Made fresh daily, served with artisan bread</td>
+                    <td>$5.95</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong>Quinoa Power Bowl</strong>
+                      <span class="healthy">VEGAN</span>
+                    </td>
+                    <td>Quinoa, roasted vegetables, tahini dressing</td>
+                    <td>$9.45</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Retail & Beans Menu -->
+        <div
+          id="retail-menu"
+          role="tabpanel"
+          aria-labelledby="retail-tab"
+          class="menu-category"
+        >
+          <h3>Take Home & Retail</h3>
+          <p class="category-description">
+            Bring the Bean Haven experience home
+          </p>
+
+          <div class="retail-sections">
+            <div class="retail-section">
+              <h4>Coffee Beans (12oz bags)</h4>
+              <table
+                class="menu-table compact"
+                role="table"
+                aria-label="Coffee Beans Menu"
+              >
+                <tbody>
+                  <tr>
+                    <td><strong>House Blend</strong></td>
+                    <td>Signature roast, balanced and smooth</td>
+                    <td>$12.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Ethiopian Single Origin</strong></td>
+                    <td>Bright, fruity notes with chocolate finish</td>
+                    <td>$15.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Colombian Supreme</strong></td>
+                    <td>Medium roast, nutty and caramel notes</td>
+                    <td>$14.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Italian Dark Roast</strong></td>
+                    <td>Bold, intense flavor for espresso lovers</td>
+                    <td>$13.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Decaf Swiss Water Process</strong></td>
+                    <td>All the flavor, none of the caffeine</td>
+                    <td>$14.95</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="retail-section">
+              <h4>Equipment & Accessories</h4>
+              <table
+                class="menu-table compact"
+                role="table"
+                aria-label="Equipment Menu"
+              >
+                <tbody>
+                  <tr>
+                    <td><strong>Bean Haven Travel Mug</strong></td>
+                    <td>16oz insulated stainless steel with logo</td>
+                    <td>$19.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>French Press</strong></td>
+                    <td>34oz glass carafe, perfect for home brewing</td>
+                    <td>$24.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Pour-Over Kit</strong></td>
+                    <td>Ceramic dripper with filters included</td>
+                    <td>$18.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Coffee Grinder</strong></td>
+                    <td>Burr grinder for optimal flavor extraction</td>
+                    <td>$89.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Bean Haven T-Shirt</strong></td>
+                    <td>100% organic cotton, various sizes and colors</td>
+                    <td>$22.95</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="retail-section">
+              <h4>Gift Cards & Packages</h4>
+              <table
+                class="menu-table compact"
+                role="table"
+                aria-label="Gift Items Menu"
+              >
+                <tbody>
+                  <tr>
+                    <td><strong>Digital Gift Card</strong></td>
+                    <td>Any denomination, delivered via email</td>
+                    <td>$10 - $100</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Coffee Lover's Package</strong></td>
+                    <td>12oz beans, travel mug, pour-over kit</td>
+                    <td>$45.95</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Monthly Coffee Subscription</strong></td>
+                    <td>12oz bag delivered monthly, free shipping</td>
+                    <td>$15.95/month</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Barista Workshop Gift</strong></td>
+                    <td>2-hour hands-on coffee making class</td>
+                    <td>$65.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Menu Footer Information -->
+        <div class="menu-footer">
+          <div class="menu-legend">
+            <h4>Menu Legend</h4>
+            <div class="legend-items">
+              <span class="legend-item">★ = Customer Favorite</span>
+              <span class="legend-item"
+                ><span class="seasonal">SEASONAL</span> = Limited Time</span
+              >
+              <span class="legend-item"
+                ><span class="healthy">WELLNESS</span> = Health-Focused</span
+              >
+              <span class="legend-item"
+                ><span class="new">NEW</span> = Recently Added</span
+              >
+            </div>
+          </div>
+
+          <div class="menu-policies">
+            <h4>Menu Policies</h4>
+            <ul>
+              <li>Prices include all taxes and are subject to change</li>
+              <li>We use organic, fair-trade ingredients whenever possible</li>
+              <li>
+                Most items can be made with alternative milk at no extra charge
+              </li>
+              <li>
+                Please inform staff of any allergies or dietary restrictions
+              </li>
+              <li>
+                Group orders (10+ items) qualify for catering prices - ask for
+                details
+              </li>
+              <li>Student discount: 20% off with valid ID</li>
+              <li>Senior discount (65+): 15% off Monday-Friday before 3PM</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Accessibility Statement Section -->
+      <!-- <section
+        id="accessibility"
+        class="accessibility-section"
+        role="region"
+        aria-labelledby="accessibility-title"
+      >
+        <h2 id="accessibility-title">Accessibility Commitment</h2>
+
+        <div class="accessibility-content">
+          <div class="accessibility-intro">
+            <p role="text">
+              At Bean Haven Coffee, we are committed to ensuring our website is
+              accessible to everyone, including people with disabilities. We
+              strive to provide an inclusive digital experience that enables all
+              visitors to access our content and services effectively.
+            </p>
+          </div>
+
+          <div class="accessibility-features">
+            <h3>Accessibility Features</h3>
+            <ul role="list">
+              <li role="listitem">
+                <strong>Keyboard Navigation:</strong> All interactive elements
+                can be accessed using keyboard navigation
+              </li>
+              <li role="listitem">
+                <strong>Screen Reader Support:</strong> Content is properly
+                structured with headings, labels, and descriptions
+              </li>
+              <li role="listitem">
+                <strong>High Contrast Mode:</strong> Toggle high contrast colors
+                for better visibility
+              </li>
+              <li role="listitem">
+                <strong>Adjustable Text Size:</strong> Increase or decrease text
+                size for comfortable reading
+              </li>
+              <li role="listitem">
+                <strong>Reduced Motion:</strong> Minimize animations for users
+                sensitive to motion
+              </li>
+              <li role="listitem">
+                <strong>Alt Text:</strong> All images include descriptive
+                alternative text
+              </li>
+              <li role="listitem">
+                <strong>Form Labels:</strong> All form fields have clear labels
+                and instructions
+              </li>
+              <li role="listitem">
+                <strong>Focus Indicators:</strong> Clear visual indicators show
+                which element has focus
+              </li>
+            </ul>
+          </div>
+
+          <div class="accessibility-standards">
+            <h3>Standards Compliance</h3>
+            <p role="text">
+              Our website follows the
+              <a
+                href="https://www.w3.org/WAI/WCAG21/AA/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Web Content Accessibility Guidelines 2.1 Level AA (opens in new tab)"
+                >Web Content Accessibility Guidelines (WCAG) 2.1 Level AA</a
+              >
+              standards. We regularly test our site with assistive technologies
+              and conduct accessibility audits.
+            </p>
+          </div>
+
+          <div class="accessibility-feedback">
+            <h3>Feedback & Support</h3>
+            <p role="text">
+              If you encounter any accessibility barriers or have suggestions
+              for improvement, please contact us:
+            </p>
+            <address role="contentinfo">
+              <p>
+                Email:
+                <a
+                  href="mailto:accessibility@beanhaven.coffee"
+                  aria-label="Email us about accessibility concerns"
+                  >accessibility@beanhaven.coffee</a
+                ><br />
+                Phone:
+                <a
+                  href="tel:+14155551234"
+                  aria-label="Call us at (415) 555-1234"
+                  >(415) 555-1234</a
+                ><br />
+                <span
+                  >We will respond to accessibility feedback within 2 business
+                  days.</span
+                >
+              </p>
+            </address>
+          </div>
+
+          <div class="accessibility-resources">
+            <h3>Helpful Resources</h3>
+            <ul role="list">
+              <li role="listitem">
+                <a
+                  href="https://www.w3.org/WAI/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Web Accessibility Initiative (opens in new tab)"
+                  >Web Accessibility Initiative (WAI)</a
+                >
+              </li>
+              <li role="listitem">
+                <a
+                  href="https://webaim.org/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="WebAIM - Web accessibility resources (opens in new tab)"
+                  >WebAIM - Web Accessibility Resources</a
+                >
+              </li>
+              <li role="listitem">
+                <a
+                  href="https://www.ada.gov/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Americans with Disabilities Act information (opens in new tab)"
+                  >Americans with Disabilities Act (ADA)</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- News & Events Section -->
+      <section id="news-events" class="news-events">
+        <h2>News & Upcoming Events</h2>
+
+        <div class="news-grid">
+          <article
+            class="news-item"
+            itemscope
+            itemtype="https://schema.org/Event"
+          >
+            <div class="news-date">
+              <time datetime="2024-02-14" itemprop="startDate">Feb 14</time>
+            </div>
+            <div class="news-content">
+              <h3 itemprop="name">Valentine's Day Special</h3>
+              <p itemprop="description">
+                Celebrate love with our special pink latte featuring rose syrup
+                and heart-shaped latte art. Buy two specialty drinks and get a
+                free box of artisan chocolates!
+              </p>
+              <div class="event-details">
+                <span class="event-time">All Day Event</span>
+                <span class="event-price">Special pricing available</span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="news-item"
+            itemscope
+            itemtype="https://schema.org/Event"
+          >
+            <div class="news-date">
+              <time datetime="2024-02-18" itemprop="startDate">Feb 18</time>
+            </div>
+            <div class="news-content">
+              <h3 itemprop="name">Coffee Cupping Session</h3>
+              <p itemprop="description">
+                Join our head barista Giuseppe for an educational coffee tasting
+                session. Learn to identify different flavor notes and brewing
+                methods. Limited to 12 participants.
+              </p>
+              <div class="event-details">
+                <span class="event-time">3:00 PM - 4:30 PM</span>
+                <span class="event-price">$25 per person</span>
+                <a href="#contact" class="event-register">Register Now</a>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="news-item"
+            itemscope
+            itemtype="https://schema.org/Event"
+          >
+            <div class="news-date">
+              <time datetime="2024-02-25" itemprop="startDate">Feb 25</time>
+            </div>
+            <div class="news-content">
+              <h3 itemprop="name">Live Acoustic Music Night</h3>
+              <p itemprop="description">
+                Local artist Emma Chen performs original acoustic songs every
+                last Sunday of the month. Enjoy great music with your evening
+                coffee. Free admission, tips appreciated.
+              </p>
+              <div class="event-details">
+                <span class="event-time">6:00 PM - 8:00 PM</span>
+                <span class="event-price">Free admission</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-item announcement">
+            <div class="news-date">
+              <time datetime="2024-02-01">Ongoing</time>
+            </div>
+            <div class="news-content">
+              <h3>New: Mobile App Pre-Order</h3>
+              <p>
+                Skip the line! Download our new mobile app to place orders ahead
+                of time. Available on iOS and App Store. Beta version now
+                accepting sign-ups.
+              </p>
+              <div class="event-details">
+                <span class="event-time">Available Now</span>
+                <a href="#contact" class="event-register">Join Beta</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-item announcement">
+            <div class="news-date">
+              <time datetime="2024-01-15">Monthly</time>
+            </div>
+            <div class="news-content">
+              <h3>Community Coffee Club</h3>
+              <p>
+                Meet fellow coffee enthusiasts every third Saturday for
+                discussions about coffee culture, brewing techniques, and
+                industry news. All skill levels welcome!
+              </p>
+              <div class="event-details">
+                <span class="event-time">10:00 AM - 11:30 AM</span>
+                <span class="event-price">Free for loyalty members</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-item announcement">
+            <div class="news-date">
+              <time datetime="2024-03-01">March 1</time>
+            </div>
+            <div class="news-content">
+              <h3>Spring Menu Launch</h3>
+              <p>
+                Get ready for our spring menu featuring floral and
+                citrus-inspired drinks. Preview includes Lavender Honey Latte,
+                Citrus Cold Brew, and seasonal pastries.
+              </p>
+              <div class="event-details">
+                <span class="event-time">Coming Soon</span>
+                <span class="event-price">Special launch prices</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="newsletter-signup">
+          <h3>Stay Updated</h3>
+          <p>
+            Subscribe to our newsletter for the latest news, events, and special
+            offers!
+          </p>
+          <form
+            action="/newsletter-signup"
+            method="post"
+            class="newsletter-form"
+          >
+            <label for="newsletter-email" class="visually-hidden"
+              >Email for newsletter</label
+            >
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+              aria-label="Email address for newsletter signup"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Comprehensive Footer -->
+    <footer
+      class="site-footer"
+      role="contentinfo"
+      itemscope
+      itemtype="https://schema.org/LocalBusiness"
+    >
+      <div class="footer-content">
+        <div class="footer-section company-info">
+          <h3 itemprop="name">Bean Haven Coffee</h3>
+          <p itemprop="description">
+            Your neighborhood coffee destination since 1995. Serving premium
+            coffee with genuine hospitality.
+          </p>
+
+          <div
+            class="contact-info"
+            itemprop="address"
+            itemscope
+            itemtype="https://schema.org/PostalAddress"
+          >
+            <p>
+              <span itemprop="streetAddress">123 Coffee Street</span><br />
+              <span itemprop="addressLocality">Bean City</span>,
+              <span itemprop="addressRegion">CA</span>
+              <span itemprop="postalCode">94102</span>
+            </p>
+            <p>
+              <a href="tel:+14155551234" itemprop="telephone">(415) 555-1234</a
+              ><br />
+              <a href="mailto:hello@beanhaven.coffee" itemprop="email"
+                >hello@beanhaven.coffee</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-section quick-links">
+          <h4>Quick Links</h4>
+          <nav
+            class="footer-nav"
+            aria-label="Footer navigation"
+            id="footer-nav"
+          >
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact & Order</a></li>
+              <li><a href="#news-events">Events</a></li>
+              <li><a href="/catering">Catering Services</a></li>
+              <li><a href="/wholesale">Wholesale</a></li>
+              <li><a href="/careers">Careers</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-section customer-service">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="/faq">Frequently Asked Questions</a></li>
+            <li><a href="/loyalty">Loyalty Program</a></li>
+            <li><a href="/gift-cards">Gift Cards</a></li>
+            <li><a href="/mobile-app">Mobile App</a></li>
+            <li><a href="/feedback">Feedback & Suggestions</a></li>
+            <li><a href="/accessibility">Accessibility</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section hours-social">
+          <h4>Store Hours</h4>
+          <div class="footer-hours">
+            <p><strong>Monday - Friday:</strong> 6:00 AM - 8:00 PM</p>
+            <p><strong>Saturday:</strong> 7:00 AM - 9:00 PM</p>
+            <p><strong>Sunday:</strong> 8:00 AM - 6:00 PM</p>
+          </div>
+
+          <div class="social-media">
+            <h4>Follow Us</h4>
+            <div
+              class="social-links"
+              role="group"
+              aria-label="Social media links"
+            >
+              <a
+                href="https://facebook.com/beanhavencoffee"
+                aria-label="Follow us on Facebook"
+                target="_blank"
+                rel="noopener"
+              >
+                📱 Facebook
+              </a>
+              <a
+                href="https://instagram.com/beanhavencoffee"
+                aria-label="Follow us on Instagram"
+                target="_blank"
+                rel="noopener"
+              >
+                📷 Instagram
+              </a>
+              <a
+                href="https://twitter.com/beanhavencoffee"
+                aria-label="Follow us on Twitter"
+                target="_blank"
+                rel="noopener"
+              >
+                🐦 Twitter
+              </a>
+              <a
+                href="https://yelp.com/biz/bean-haven-coffee"
+                aria-label="Review us on Yelp"
+                target="_blank"
+                rel="noopener"
+              >
+                ⭐ Yelp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <p>&copy; 2024 Bean Haven Coffee. All rights reserved.</p>
+          <div class="legal-links">
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+            <a href="/cookie-policy">Cookie Policy</a>
+            <a href="/sustainability">Sustainability</a>
+          </div>
+        </div>
+
+        <div class="footer-certifications">
+          <p class="certifications">
+            <span class="cert-badge">Fair Trade Certified</span>
+            <span class="cert-badge">Organic Certified</span>
+            <span class="cert-badge">SCA Member</span>
+            <span class="cert-badge">Local Business</span>
+          </p>
+        </div>
+
+        <div class="footer-tech">
+          <p class="site-info">
+            <small>
+              Website designed for accessibility and performance.
+              <a href="/sitemap" aria-label="View site map">Sitemap</a> |
+              <a href="#accessibility" aria-label="View accessibility statement"
+                >Accessibility</a
+              >
+              |
+              <a href="#contact" aria-label="Report website issues"
+                >Report an issue</a
+              >
+            </small>
+          </p>
+          <p class="accessibility-note">
+            <small>
+              <span role="img" aria-label="Checkmark">✓</span> WCAG 2.1 AA
+              Compliant |
+              <span role="img" aria-label="Universal access symbol">♿</span>
+              Screen Reader Tested |
+              <span role="img" aria-label="Keyboard">⌨</span> Keyboard Navigable
+            </small>
+          </p>
+        </div>
+      </div>
+
+      
+  </body>
+</html>
