@@ -1,0 +1,145 @@
+.blog-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 60px 1fr 40px;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  gap: 10px;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #ec5656;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #676464;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px;
+}
+
+.cat-item {
+  font-size: 16px;
+  font-weight: normal;
+  list-style: none;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.cat-item:hover {
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.main {
+  grid-area: main;
+  background-color: #333;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.art-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.art-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.art-title:hover {
+  color: #ec5656;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.art-item:hover {
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.art-content {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto 1fr 40px;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+  }
+  .categories {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .cat-item {
+    font-size: 12px;
+  }
+  .cat-title {
+    font-size: 16px;
+  }
+}
+
+/* 
+  .main: 
+  - display: grid; enables CSS Grid layout for the main content area.
+  - grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+      This creates as many columns as will fit in the container, 
+      with each column being at least 200px wide but able to grow to fill available space.
+      'auto-fit' automatically adjusts the number of columns based on the container's width.
+  - gap: 10px; sets a 10px gap between grid items, both rows and columns.
+*/
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
