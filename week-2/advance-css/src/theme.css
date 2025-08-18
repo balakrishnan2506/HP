@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+
+  --font-family-primary: "Roboto", sans-serif;
+
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+  --spacing-x-large: 32px;
+  --spacing-xx-large: 40px;
+
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 12px;
+
+  --shadow-small: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  --transition-fast: 0.2s ease-in-out;
+  --transition-medium: 0.4s ease-in-out;
+  --transition-slow: 0.6s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
