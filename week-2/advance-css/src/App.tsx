@@ -3,9 +3,14 @@ import logo from "./logo.svg";
 import "./App.css";
 import "./theme.css";
 import Landing from "./screen/landing/Landing";
+import ProfileCard from "./screen/profileCard/ProfileCard";
 
 function App() {
-  return <Landing />;
+  return (
+    <div>
+      <ProfileCard />
+    </div>
+  );
 }
 
 export default App;
